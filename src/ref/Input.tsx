@@ -10,16 +10,23 @@ const Input: React.FC = () => {
     const [user, setUser] = React.useState<{ name: string; age: number } | undefined>()
     const [name, setName] = React.useState('')
 
-    const Onclick = () => {
+    const onClick = () => {
         const foundUser = userList.find((user) => {
-            return user.name ===
+            return user.name === name
         })
+        setUser(foundUser)
     }
+    React.useEffect(() => {
+        if (!InputRef.current) {
+            return;
+        }
+        InputRef.current.focus
+    }, [])
 
     return (
         <>
             <input ref={InputRef} name="user" type="text" value={name} onChange={(e) => setName(e.target.value)} />
-            <button>Search</button>
+            <button onClick={onClick}>Search</button>
         </>
     )
 }

@@ -27,6 +27,14 @@ const Input: React.FC = () => {
         <>
             <input ref={InputRef} name="user" type="text" value={name} onChange={(e) => setName(e.target.value)} />
             <button onClick={onClick}>Search</button>
+
+            {user ?
+                <>
+                    <h2>{` Name   ${user?.name}`}</h2>
+                    <p>{`Age ${user?.age}`}</p>
+                </>
+                :
+                []}
         </>
     )
 }

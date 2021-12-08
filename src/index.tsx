@@ -1,9 +1,10 @@
 import ReactDOM from 'react-dom';
+import Input from './ref/Input';
 
 const App = () => {
     return (
         <div>
-            Hello there!!
+            <Input />
         </div>
     )
 };

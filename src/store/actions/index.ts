@@ -1,4 +1,4 @@
-import { ActionTypes } from '../../store/action-types/index'
+import { ActionTypes } from '../action-types/index'
 export interface SearchRepositoriesAction {
     type: ActionTypes.SEARCH_REPOSITORIES,
 

@@ -20,7 +20,7 @@ const Input: React.FC = () => {
         if (!InputRef.current) {
             return;
         }
-        InputRef.current.focus
+        InputRef.current.focus()
     }, [])
 
     return (

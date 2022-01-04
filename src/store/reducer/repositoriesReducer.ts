@@ -1,5 +1,5 @@
-
-import {Action, ActionTypes} from '../../utils/data'
+import {ActionTypes } from '../action-types/index';
+import {Action } from '../actions/index';
 interface RepositoriesInitialState  {
     loading: boolean,
     error: boolean | null,

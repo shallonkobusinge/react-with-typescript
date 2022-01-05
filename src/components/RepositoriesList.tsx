@@ -1,10 +1,14 @@
 import React from 'react';
+import { useActions } from '../hooks/useActions';
 
 const RepositoriesList: React.FC = () => {
     const [names, setNames] = React.useState('');
+    const { searchResults } = useActions();
 
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        searchResults(names);
+
     };
 
     return (

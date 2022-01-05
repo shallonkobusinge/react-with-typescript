@@ -19,7 +19,7 @@ const searchRepositoryFailure = (message: Error) =>({
 });
 
 
-const searchResults = (term: string) =>{
+export const searchResults = (term: string) =>{
     return async (dispatch: Dispatch<Action>) => {
         dispatch({
             type: ActionTypes.SEARCH_REPOSITORIES,

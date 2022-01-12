@@ -2,8 +2,10 @@ import { combineReducers} from 'redux';
 import repositoriesReducer from './repositoriesReducer';
 
 
-const reducer = combineReducers({
+const reducers = combineReducers({
     repository: repositoriesReducer,
 })
 
-export default reducer;
+export default reducers;
+
+export type RootState = ReturnType<typeof reducers>  

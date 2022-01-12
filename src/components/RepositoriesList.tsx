@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 const RepositoriesList: React.FC = () => {
     const [names, setNames] = React.useState('');
     const { searchResults } = useActions();
-    const { data, error, loading } = useSelector((state: any) => state.repository);
+    const { data, error, loading } = useSelector((state) => state.repository);
 
 
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
